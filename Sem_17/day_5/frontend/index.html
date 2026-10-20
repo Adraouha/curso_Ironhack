@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteo de Premios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sorteo de Premios</h1>
+
+        <div class="bloque">
+            <h2>Anadir nuevo premio (POST)</h2>
+            <input type="text" id="premio" placeholder="Introduce un premio">
+            <button id="btnAgregar">Anadir premio</button>
+        </div>
+
+        <div class="bloque">
+            <h2>Consultar premios (GET)</h2>
+            <button id="btnSortear">Sortear premio aleatorio</button>
+            <button id="btnVerTodos">Ver lista de premios</button>
+            <div id="resultado"></div>
+            <ul id="listaPremios"></ul>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+**/target/
+.idea/
+*.iml
+.DS_Store
+Sem_18/day_3/config.js
+**/.env

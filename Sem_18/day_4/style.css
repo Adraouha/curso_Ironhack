@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222222;
+    margin: 0;
+    padding: 20px;
+}
+
+.pagina {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #1f3a60;
+    border-bottom: 2px solid #1f3a60;
+    padding-bottom: 8px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #1f3a60;
+    margin-top: 20px;
+}
+
+.panel-controles {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.panel-controles h2 {
+    margin-top: 0;
+}
+
+input {
+    padding: 6px;
+    border: 1px solid #aaaaaa;
+    width: 80px;
+}
+
+button {
+    padding: 6px 12px;
+    background-color: #1f3a60;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin-right: 6px;
+}
+
+button:hover {
+    background-color: #152945;
+}
+
+#indicadorPagina {
+    font-weight: bold;
+    margin: 0 8px;
+}
+
+.grid-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    width: 180px;
+    text-align: center;
+}
+
+.card-imagen {
+    width: 100%;
+    height: auto;
+    border: 1px solid #dddddd;
+}
+
+.card-titulo {
+    font-weight: bold;
+    margin: 8px 0 4px 0;
+}
+
+.card-detalle {
+    font-size: 13px;
+    color: #555555;
+    margin: 2px 0;
+}
+
+.tabla-datos {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+.tabla-datos th,
+.tabla-datos td {
+    border: 1px solid #cccccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabla-datos th {
+    background-color: #e8eef5;
+}

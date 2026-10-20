@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica de Documentacion con JSDoc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Documentacion con JSDoc</h1>
+        <p>Esta pagina carga los archivos <code>variables.js</code> y <code>funciones.js</code> documentados con JSDoc.</p>
+
+        <div class="bloque">
+            <h2>Prueba de las funciones documentadas</h2>
+            <p id="salidaFicha"></p>
+            <p id="salidaPrecio"></p>
+            <p id="salidaMatricula"></p>
+        </div>
+
+        <div class="bloque">
+            <h2>Documentacion HTML generada</h2>
+            <p>Puedes abrir la documentacion generada por JSDoc en el siguiente enlace:</p>
+            <a href="./docs/index.html">Abrir documentacion JSDoc (./docs/index.html)</a>
+        </div>
+    </div>
+
+    <script src="variables.js"></script>
+    <script src="funciones.js"></script>
+    <script>
+        const precioFinal = calcularPrecioConIva(12000, porcentajeIva);
+        const ficha = formatearFichaCoche("Seat", "Ibiza", 12000);
+        const esValida = validarMatricula("1111-AAA");
+
+        mostrarEnPantalla("salidaFicha", "Ficha: " + ficha);
+        mostrarEnPantalla("salidaPrecio", "Precio con IVA (" + porcentajeIva + "%): " + precioFinal + " EUR");
+        mostrarEnPantalla("salidaMatricula", "Matricula 1111-AAA valida: " + esValida);
+    </script>
+</body>
+</html>

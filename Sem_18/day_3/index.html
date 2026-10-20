@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta del Tiempo - OpenWeatherMap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Consulta Meteorologica</h1>
+
+        <div class="buscador">
+            <label for="inputCiudad">Ciudad:</label>
+            <input type="text" id="inputCiudad" value="Barcelona" placeholder="Ej: Barcelona, Madrid, Valencia">
+            <button id="btnConsultar">Consultar tiempo</button>
+        </div>
+
+        <section id="panelTiempo" class="tarjeta-tiempo">
+            <h2 id="ciudad">Cargando...</h2>
+            <p><strong>Estado del cielo:</strong> <span id="descripcion">--</span></p>
+            <p><strong>Temperatura actual:</strong> <span id="temperatura">--</span></p>
+            <p><strong>Sensacion termica:</strong> <span id="sensacion">--</span></p>
+            <p><strong>Humedad:</strong> <span id="humedad">--</span></p>
+            <p><strong>Velocidad del viento:</strong> <span id="viento">--</span></p>
+        </section>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

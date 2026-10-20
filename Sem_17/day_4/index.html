@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concesionario - Login con BCrypt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Aplicacion de Coches con Login BCrypt</h1>
+
+        <!-- LOGIN -->
+        <div id="login" class="bloque">
+            <h2>Iniciar sesion</h2>
+            <input type="text" id="username" placeholder="Usuario (ej: admin)">
+            <input type="password" id="password" placeholder="Contrasena (ej: 1234)">
+            <button onclick="iniciarSesion()">Entrar</button>
+            <p id="mensajeLogin"></p>
+        </div>
+
+        <!-- APLICACION -->
+        <div id="app" style="display: none;">
+            <div class="barra-sesion">
+                <span>Sesion iniciada</span>
+                <button onclick="cerrarSesion()">Cerrar sesion</button>
+            </div>
+
+            <div class="bloque">
+                <h2>Ver todos los coches</h2>
+                <button id="vertodoscoches" onclick="verTodos()">Ver todos los coches</button>
+            </div>
+
+            <div class="bloque">
+                <h2>Ver un coche por su ID</h2>
+                <label for="idcoche">Escribe el ID del coche:</label>
+                <input type="number" id="idcoche">
+                <button id="veruncoche" onclick="verUno()">Ver un coche</button>
+            </div>
+
+            <div class="bloque">
+                <h2>Anadir coche</h2>
+                <fieldset>
+                    <input type="text" id="marca" placeholder="Marca">
+                    <input type="text" id="modelo" placeholder="Modelo">
+                    <input type="text" id="matricula" placeholder="Matricula">
+                    <br>
+                    <input type="number" id="precio" placeholder="Precio">
+                    <input type="number" id="marcaId" placeholder="ID de la marca">
+                    <button onclick="crearCoche()">Anadir coche</button>
+                    <br>
+                    <small>IDs de marcas: 1 Seat, 2 Renault, 3 Toyota, 4 Peugeot, 5 Audi</small>
+                </fieldset>
+            </div>
+
+            <div class="bloque">
+                <h2>Actualizar un coche por su ID</h2>
+                <fieldset>
+                    <input type="number" id="idcocheactualizar" placeholder="ID del coche">
+                    <br>
+                    <input type="text" id="marcaAct" placeholder="Marca">
+                    <input type="text" id="modeloAct" placeholder="Modelo">
+                    <input type="text" id="matriculaAct" placeholder="Matricula (opcional)">
+                    <input type="number" id="precioAct" placeholder="Precio">
+                    <button onclick="actualizarCoche()">Actualizar coche</button>
+                </fieldset>
+            </div>
+
+            <div class="bloque">
+                <h2>Borrar un coche por su ID</h2>
+                <label for="idcocheborrar">Escribe el ID del coche:</label>
+                <input type="number" id="idcocheborrar">
+                <button onclick="borrarCoche()">Borrar coche</button>
+            </div>
+
+            <div id="resultado" class="bloque">
+                <h2>Resultados</h2>
+                <div id="datosCoche">Pulsa un boton para consultar los coches.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

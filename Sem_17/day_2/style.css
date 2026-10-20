@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222222;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #1f3a60;
+    border-bottom: 2px solid #1f3a60;
+    padding-bottom: 8px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #1f3a60;
+}
+
+.bloque {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+fieldset {
+    border: 1px solid #dddddd;
+    padding: 10px;
+}
+
+input {
+    padding: 6px;
+    margin: 4px 4px 4px 0;
+    border: 1px solid #aaaaaa;
+}
+
+button {
+    padding: 6px 12px;
+    background-color: #1f3a60;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #152945;
+}
+
+small {
+    color: #555555;
+}
+
+.coche-item {
+    border-bottom: 1px solid #dddddd;
+    padding: 8px 0;
+}

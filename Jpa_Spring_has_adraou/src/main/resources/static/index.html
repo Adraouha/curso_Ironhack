@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Coches</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Gestion de Coches con Spring Boot y Fetch</h1>
+
+        <div id="bloqueLogin" class="caja">
+            <h2>Iniciar sesion</h2>
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" placeholder="admin">
+            <label for="password">Contrasena:</label>
+            <input type="password" id="password" placeholder="1234">
+            <button onclick="iniciarSesion()">Entrar</button>
+            <p id="mensajeLogin"></p>
+        </div>
+
+        <div id="bloqueApp">
+            <div class="caja">
+                <h2>Ver todos los coches</h2>
+                <button onclick="verTodos()">Cargar lista de coches</button>
+            </div>
+
+            <div class="caja">
+                <h2>Buscar un coche por ID</h2>
+                <label for="idcoche">ID del coche:</label>
+                <input type="number" id="idcoche" placeholder="Ej: 1">
+                <button onclick="verUno()">Buscar coche</button>
+            </div>
+
+            <div class="caja">
+                <h2>Anadir coche nuevo</h2>
+                <input type="text" id="marca" placeholder="Marca">
+                <input type="text" id="modelo" placeholder="Modelo">
+                <input type="text" id="matricula" placeholder="Matricula">
+                <input type="number" id="precio" placeholder="Precio">
+                <input type="number" id="marcaId" placeholder="ID de marca (1 a 5)">
+                <button onclick="crearCoche()">Anadir coche</button>
+                <p class="nota">IDs de marcas: 1 Seat, 2 Renault, 3 Toyota, 4 Peugeot, 5 Audi</p>
+            </div>
+
+            <div class="caja">
+                <h2>Modificar coche existente (PUT)</h2>
+                <input type="number" id="idcocheactualizar" placeholder="ID del coche">
+                <input type="text" id="marcaAct" placeholder="Nueva marca">
+                <input type="text" id="modeloAct" placeholder="Nuevo modelo">
+                <input type="text" id="matriculaAct" placeholder="Nueva matricula (opcional)">
+                <input type="number" id="precioAct" placeholder="Nuevo precio">
+                <button onclick="actualizarCoche()">Actualizar coche</button>
+            </div>
+
+            <div class="caja">
+                <h2>Eliminar coche por ID</h2>
+                <label for="idcocheborrar">ID del coche:</label>
+                <input type="number" id="idcocheborrar" placeholder="Ej: 1">
+                <button onclick="borrarCoche()">Eliminar coche</button>
+            </div>
+
+            <div class="caja">
+                <h2>Resultados</h2>
+                <div id="datosCoche">Pulsa un boton para consultar los datos.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

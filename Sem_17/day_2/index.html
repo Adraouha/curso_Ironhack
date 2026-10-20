@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concesionario - CRUD con Fetch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>CRUD de Coches con Fetch</h1>
+
+        <div class="bloque">
+            <h2>Ver todos los coches</h2>
+            <button onclick="verTodos()">Ver todos</button>
+        </div>
+
+        <div class="bloque">
+            <h2>Buscar un coche por su ID</h2>
+            <label for="numeroid">Introduce el ID del coche:</label>
+            <input type="number" id="numeroid" placeholder="Ej: 1">
+            <button onclick="verUno()">Ver coche</button>
+        </div>
+
+        <div class="bloque">
+            <h2>Anadir un coche</h2>
+            <fieldset>
+                <input type="text" id="marca" placeholder="Marca">
+                <input type="text" id="modelo" placeholder="Modelo">
+                <input type="text" id="matricula" placeholder="Matricula">
+                <br>
+                <input type="number" id="precio" placeholder="Precio">
+                <input type="number" id="marcaId" placeholder="ID de la Marca">
+                <button onclick="crearCoche()">Anadir coche</button>
+                <br>
+                <small>IDs de marcas: 1 Seat, 2 Renault, 3 Toyota, 4 Peugeot, 5 Audi</small>
+            </fieldset>
+        </div>
+
+        <div class="bloque">
+            <h2>Eliminar un coche por su ID</h2>
+            <label for="idcocheborrar">Introduce el ID del coche:</label>
+            <input type="number" id="idcocheborrar" placeholder="Ej: 1">
+            <button onclick="borrarCoche()">Borrar coche</button>
+        </div>
+
+        <div class="bloque">
+            <h2>Resultados</h2>
+            <div id="datosCoche">Pulsa un boton para mostrar resultados.</div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

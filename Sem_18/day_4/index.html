@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty - createElement y appendChild</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pagina">
+        <h1>Personajes de Rick and Morty con DOM</h1>
+
+        <section class="panel-controles">
+            <h2>1. Mostrar un unico personaje</h2>
+            <label for="numero">Numero del personaje (ID):</label>
+            <input type="number" id="numero" value="1" min="1">
+            <button id="btnVerUno">Mostrar personaje</button>
+        </section>
+
+        <section class="panel-controles">
+            <h2>2. Mostrar varios registros y paginacion</h2>
+            <button id="btnVerTodos">Mostrar pagina de personajes</button>
+            <button id="btnAnterior">Pagina anterior</button>
+            <span id="indicadorPagina">Pagina: 1</span>
+            <button id="btnSiguiente">Pagina siguiente</button>
+        </section>
+
+        <h2>Tarjetas creadas con createElement y appendChild</h2>
+        <div id="contenedor" class="grid-tarjetas"></div>
+
+        <h2>Tabla generada con createElement y appendChild</h2>
+        <table class="tabla-datos">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Especie</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody id="tablaDOM"></tbody>
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

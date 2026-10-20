@@ -1,0 +1,16 @@
+{
+  "source": {
+    "include": ["variables.js", "funciones.js", "README.md"]
+  },
+  "opts": {
+    "destination": "./docs",
+    "recurse": true,
+    "tutorials": "./tuto",
+    "readme": "./README.md"
+  },
+  "templates": {
+    "default": {
+      "includeDate": true
+    }
+  }
+}

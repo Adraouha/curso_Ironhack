@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclo de Vida del Desarrollo de Software (SDLC)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Ciclo de Vida del Desarrollo de Software (SDLC)</h1>
+        <p>Resumen de las seis fases principales aplicadas al proyecto de concesionario de coches del curso.</p>
+
+        <section class="fase">
+            <h2>1. Planificacion</h2>
+            <p><strong>Explicacion:</strong> Consiste en organizar las tareas del proyecto, estimar el tiempo necesario y decidir que herramientas se van a utilizar.</p>
+            <p><strong>Ejemplo en el proyecto del curso:</strong> Decidir que crearemos una aplicacion web de gestion de coches usando MySQL para la base de datos, Spring Boot para el back-end y HTML, CSS y JavaScript para el front-end, repartiendo el trabajo por semanas.</p>
+        </section>
+
+        <section class="fase">
+            <h2>2. Analisis de requisitos</h2>
+            <p><strong>Explicacion:</strong> Se definen las funciones concretas que necesita el usuario y los datos que debe guardar el sistema antes de empezar a programar.</p>
+            <p><strong>Ejemplo en el proyecto del curso:</strong> Acordar que cada coche tendra id, marca, modelo, matricula unica y precio, que estara relacionado con una tabla de marcas y que la web permitira listar, buscar por ID, crear, modificar, borrar e iniciar sesion.</p>
+        </section>
+
+        <section class="fase">
+            <h2>3. Codificacion</h2>
+            <p><strong>Explicacion:</strong> Es la etapa en la que los programadores escriben el codigo fuente tanto del servidor como de la interfaz de usuario.</p>
+            <p><strong>Ejemplo en el proyecto del curso:</strong> Programar las entidades JPA (`Coche`, `Marca`, `Usuario`), los repositorios, servicios y controladores en Java, y escribir las funciones `fetch` en JavaScript para conectar el HTML con los endpoints.</p>
+        </section>
+
+        <section class="fase">
+            <h2>4. Documentacion</h2>
+            <p><strong>Explicacion:</strong> Consiste en redactar comentarios claros en el codigo y guias de uso para que otros desarrolladores o usuarios entiendan como funciona el programa.</p>
+            <p><strong>Ejemplo en el proyecto del curso:</strong> Escribir el archivo `README.md` explicando como arrancar MySQL en el puerto 3306 y Spring Boot en el 8080, y comentar las funciones de JavaScript con etiquetas JSDoc.</p>
+        </section>
+
+        <section class="fase">
+            <h2>5. Pruebas</h2>
+            <p><strong>Explicacion:</strong> Se comprueba que todas las partes de la aplicacion funcionan como se esperaba y se corrigen los errores encontrados.</p>
+            <p><strong>Ejemplo en el proyecto del curso:</strong> Probar las peticiones `GET`, `POST`, `PUT` y `DELETE` con Postman o Bruno, ejecutar los tests de JUnit en Spring Boot y revisar con `console.log` que no aparezcan errores de CORS en el navegador.</p>
+        </section>
+
+        <section class="fase">
+            <h2>6. Despliegue</h2>
+            <p><strong>Explicacion:</strong> Es la puesta en marcha de la aplicacion terminada en un servidor o repositorio accesible para su entrega o uso real.</p>
+            <p><strong>Ejemplo en el proyecto del curso:</strong> Subir el codigo verificado al repositorio privado de GitHub o publicar la base de datos y la API en un servidor para que pueda utilizarse fuera del ordenador local.</p>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222222;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #1f3a60;
+    border-bottom: 2px solid #1f3a60;
+    padding-bottom: 8px;
+}
+
+.buscador {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 6px;
+    border: 1px solid #aaaaaa;
+    margin-right: 6px;
+}
+
+button {
+    padding: 7px 12px;
+    background-color: #1f3a60;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #152945;
+}
+
+.tarjeta-tiempo {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px;
+}
+
+.tarjeta-tiempo h2 {
+    margin-top: 0;
+    color: #1f3a60;
+}
+
+.tarjeta-tiempo p {
+    margin: 8px 0;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 6px;
+}

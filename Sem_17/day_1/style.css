@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222222;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #1f3a60;
+    border-bottom: 2px solid #1f3a60;
+    padding-bottom: 8px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #1f3a60;
+}
+
+.bloque {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.coche-item {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 0;
+}
+
+.coche-item:last-child {
+    border-bottom: none;
+}
+
+.coche-item h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+.coche-item p {
+    margin: 2px 0;
+    font-size: 14px;
+    color: #444444;
+}
