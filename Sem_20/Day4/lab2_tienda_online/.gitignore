@@ -1,0 +1,5 @@
+# Ignorar todos los archivos de configuracion properties
+*.properties
+
+# Ignorar la carpeta temporal y su contenido
+temp/

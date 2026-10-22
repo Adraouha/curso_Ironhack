@@ -1,0 +1,37 @@
+    1  git init
+    2  ls -la
+    3  touch libros.txt
+    4  cat libros.txt
+    5  git add libros.txt
+    6  git commit -m "Commit 1 en main: anadidos 3 libros iniciales"
+    7  git branch
+    8  git checkout -b nuevos-libros
+    9  cat >> libros.txt
+   10  git diff
+   11  git add libros.txt
+   12  git commit -m "Commit 2 en nuevos-libros: anadidos 2 libros nuevos"
+   13  git checkout main
+   14  nano libros.txt
+   15  git diff
+   16  git add libros.txt
+   17  git commit -m "Commit 3 en main: modificada edicion de Don Quijote"
+   18  git merge nuevos-libros
+   19  git status
+   20  cat libros.txt
+   21  nano libros.txt
+   22  git add libros.txt
+   23  git commit -m "Commit 4 en main: resuelto conflicto de merge en libros.txt"
+   24  git checkout -b autores
+   25  touch autores.txt
+   26  cat autores.txt
+   27  git add autores.txt
+   28  git commit -m "Commit 5 en autores: anadido autores.txt"
+   29  git checkout main
+   30  git merge autores
+   31  git log --oneline
+   32  git branch
+   33  git branch -d nuevos-libros
+   34  git branch -d autores
+   35  git log --oneline > tuNombreGitLogoneLine.txt
+   36  git log > tuNombreGitLog.txt
+   37  history 70 > tuNombreHistorial.txt

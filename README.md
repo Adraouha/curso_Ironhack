@@ -19,6 +19,8 @@ Repositorio con las tareas organizadas por semanas y dias a partir de la semana 
 - `Sem_20/Day1`: Documentacion con Javadoc (Niveles 1 y 2 con exportacion HTML) y expresiones regulares RegEx (HTML5 pattern/title, JavaScript test/exec/match, Java matches/Pattern y MySQL REGEXP).
 - `Sem_20/Day2`: Git y GitHub con Visual Studio Code (control de versiones, interfaz Source Control, staging, commits, ramas, merge y subida a GitHub).
 - `Sem_20/Day3`: Git Bash y comandos de terminal (entorno Unix, modificadores flags, ramas por consola, git reset y exportacion de log e historial).
+- `Sem_20/Day4`: .gitignore y conflictos de merge en Git (VIM, Pager, amend, diff, Lab Biblioteca y Lab Tienda Online).
+
 
 
 

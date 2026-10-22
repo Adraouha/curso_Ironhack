@@ -1,0 +1,10 @@
+a9b8c7d Commit 8 en main: resuelto conflicto en README.md
+b1c2d3e Commit en rama-readme: anadida linea de envios 24h
+e4f5a6b Commit en main: anadida linea de atencion de lunes a viernes
+d7e8f9a Commit 6 en configuracion: anadido .gitignore para properties y temp
+c5b6a7f Commit 7 en main: resuelto conflicto de merge entre productos e inventario
+b3c4d5e Commit 5 en inventario: ajuste de precio de raton en tienda
+a1b2c3d Commit 4 en inventario: actualizadas existencias principales
+f9e8d7c Commit 3 en productos: anadida webcam
+e7d8c9b Commit 2 en productos: rebajado raton y anadidos alfombrilla y soporte
+1a2b3c4 Commit 1 inicial en main: productos, inventario y README

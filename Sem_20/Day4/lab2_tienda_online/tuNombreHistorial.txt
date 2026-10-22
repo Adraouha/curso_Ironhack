@@ -1,0 +1,67 @@
+    1  git init
+    2  ls -la
+    3  touch productos.txt README.md inventario.txt
+    4  cat productos.txt
+    5  cat README.md
+    6  cat inventario.txt
+    7  git add .
+    8  git commit -m "Commit 1 inicial en main: productos, inventario y README"
+    9  git checkout -b productos
+   10  nano productos.txt
+   11  git diff
+   12  git add productos.txt
+   13  git commit -m "Commit 2 en productos: rebajado raton y anadidos alfombrilla y soporte"
+   14  echo "8. Webcam Full HD - 39.90 EUR" >> productos.txt
+   15  git add productos.txt
+   16  git commit -m "Commit 3 en productos: anadida webcam"
+   17  git checkout main
+   18  git checkout -b inventario
+   19  nano inventario.txt
+   20  git add inventario.txt
+   21  git commit -m "Commit 4 en inventario: actualizadas existencias principales"
+   22  nano productos.txt
+   23  git add productos.txt
+   24  git commit -m "Commit 5 en inventario: ajuste de precio de raton en tienda"
+   25  git checkout main
+   26  git checkout -b configuracion
+   27  echo "db.url=jdbc:mysql://localhost:3306/tienda" > config.properties
+   28  echo "tienda.nombre=Mi Tienda" > tienda.properties
+   29  echo "*.properties" > .gitignore
+   30  echo "temp/" >> .gitignore
+   31  mkdir temp
+   32  touch temp/prueba.tmp
+   33  git status
+   34  git status --ignored
+   35  git add .gitignore
+   36  git commit -m "Commit 6 en configuracion: anadido .gitignore para properties y temp"
+   37  git checkout main
+   38  git merge productos
+   39  git merge inventario
+   40  git status
+   41  cat productos.txt
+   42  nano productos.txt
+   43  git diff
+   44  git add productos.txt
+   45  git commit -m "Commit 7 en main: resuelto conflicto de merge entre productos e inventario"
+   46  git merge configuracion
+   47  git checkout -b rama-readme
+   48  echo "Tienda con envios en 24 horas y atencion premium." >> README.md
+   49  git add README.md
+   50  git commit -m "Commit en rama-readme: anadida linea de envios 24h"
+   51  git checkout main
+   52  echo "Atencion al cliente disponible de lunes a viernes." >> README.md
+   53  git add README.md
+   54  git commit -m "Commit en main: anadida linea de atencion de lunes a viernes"
+   55  git merge rama-readme
+   56  nano README.md
+   57  git add README.md
+   58  git commit -m "Commit 8 en main: resuelto conflicto en README.md"
+   59  git log --graph --oneline
+   60  git branch
+   61  git branch -d productos
+   62  git branch -d inventario
+   63  git branch -d configuracion
+   64  git branch -D rama-readme
+   65  git log --oneline > tuNombreGitLogoneLine.txt
+   66  git log > tuNombreGitLog.txt
+   67  history 100 > tuNombreHistorial.txt
