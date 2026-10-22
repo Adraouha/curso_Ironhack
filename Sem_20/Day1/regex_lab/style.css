@@ -1,0 +1,173 @@
+/* Estilos muy basicos para principiantes (sin animaciones ni iconos) */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #f7f9fa;
+    color: #222222;
+    margin: 0;
+    padding: 20px;
+}
+
+header, main, footer {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #111111;
+    margin: 0 0 8px 0;
+}
+
+h2 {
+    font-size: 18px;
+    color: #333333;
+    margin-top: 0;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 6px;
+}
+
+p {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #555555;
+}
+
+/* Bloques o secciones */
+.bloque {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+/* Campos de formulario */
+.campo {
+    margin-bottom: 14px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+label.inline {
+    display: inline;
+    font-weight: normal;
+    margin-right: 12px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #0066cc;
+}
+
+small {
+    display: block;
+    color: #666666;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+/* Nota explicativa */
+.nota-informativa {
+    background-color: #eef4fb;
+    border: 1px solid #b8d4f0;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 13px;
+    color: #1a446c;
+    border-radius: 3px;
+}
+
+/* Botones */
+.botones {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+button {
+    background-color: #0066cc;
+    color: #ffffff;
+    border: 1px solid #0055aa;
+    padding: 8px 14px;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0055aa;
+}
+
+button[type="reset"] {
+    background-color: #e0e0e0;
+    color: #333333;
+    border: 1px solid #cccccc;
+}
+
+button[type="reset"]:hover {
+    background-color: #d0d0d0;
+}
+
+/* Caja para ver resultados */
+.caja-resultado {
+    background-color: #f2f2f2;
+    border: 1px solid #dddddd;
+    padding: 12px;
+    margin-top: 15px;
+    font-family: monospace;
+    font-size: 13px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    border-radius: 3px;
+}
+
+/* Enlaces */
+ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+li {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #888888;
+    margin-top: 30px;
+    border-top: 1px solid #dddddd;
+    padding-top: 12px;
+}

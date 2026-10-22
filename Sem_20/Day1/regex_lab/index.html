@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expresiones Regulares - Semana 20 Dia 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Practica de Expresiones Regulares (RegEx)</h1>
+        <p>Ejemplo basico de validacion de formularios en HTML y JavaScript.</p>
+    </header>
+
+    <main>
+        <!-- SECCION 1: FORMULARIO CON PATTERN Y TITLE -->
+        <section class="bloque">
+            <h2>1. Formulario con atributos pattern y title</h2>
+            <p>Escribe en los campos. El atributo title muestra una pista si el formato no coincide.</p>
+
+            <form id="formulario">
+                <!-- TELEFONO -->
+                <div class="campo">
+                    <label for="telefono">Telefono:</label>
+                    <input 
+                        type="text" 
+                        id="telefono" 
+                        name="telefono" 
+                        placeholder="569-542-523"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" 
+                        title="Formato requerido: 569-542-523"
+                        required
+                    >
+                    <small>Patron requerido: 3 digitos, guion, 3 digitos, guion, 3 digitos (ejemplo: 569-542-523).</small>
+                </div>
+
+                <!-- CORREO -->
+                <div class="campo">
+                    <label for="correo">Correo electronico:</label>
+                    <input 
+                        type="email" 
+                        id="correo" 
+                        name="correo" 
+                        placeholder="usuario@correo.com"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        title="Introduce un correo valido como usuario@correo.com"
+                        required
+                    >
+                    <small>Ejemplo: usuario@correo.com</small>
+                </div>
+
+                <!-- USUARIO -->
+                <div class="campo">
+                    <label for="usuario">Nombre de usuario:</label>
+                    <input 
+                        type="text" 
+                        id="usuario" 
+                        name="usuario" 
+                        placeholder="juan123"
+                        pattern="[a-zA-Z0-9]{4,10}"
+                        title="Entre 4 y 10 letras o numeros"
+                        required
+                    >
+                    <small>Entre 4 y 10 letras o numeros (sin espacios).</small>
+                </div>
+
+                <!-- NOTA SOBRE SELECT, CHECKBOX Y RADIO -->
+                <div class="nota-informativa">
+                    <strong>Nota:</strong> Los campos select, checkbox y radio button no necesitan control de validacion con RegEx, porque sus valores (value) ya vienen predeterminados por el programador.
+                </div>
+
+                <div class="campo">
+                    <label for="curso">Selecciona un curso:</label>
+                    <select id="curso">
+                        <option value="java">Java</option>
+                        <option value="js">JavaScript</option>
+                        <option value="html">HTML y CSS</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label>Turno:</label>
+                    <input type="radio" id="manana" name="turno" value="manana" checked>
+                    <label for="manana" class="inline">Manana</label>
+                    <input type="radio" id="tarde" name="turno" value="tarde">
+                    <label for="tarde" class="inline">Tarde</label>
+                </div>
+
+                <div class="campo">
+                    <input type="checkbox" id="acepto" checked>
+                    <label for="acepto" class="inline">Acepto los terminos</label>
+                </div>
+
+                <!-- BOTONES -->
+                <div class="botones">
+                    <button type="button" id="btn-validar">Validar con JavaScript (.value)</button>
+                    <button type="button" id="btn-ejemplo">Poner datos de ejemplo</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+            </form>
+
+            <!-- RESULTADO DE LA VALIDACION -->
+            <div id="resultado-formulario" class="caja-resultado">
+                Presiona el boton "Validar con JavaScript" para ver el resultado aqui.
+            </div>
+        </section>
+
+        <!-- SECCION 2: METODOS REGEX EN JAVASCRIPT -->
+        <section class="bloque">
+            <h2>2. Metodos de RegEx en JavaScript</h2>
+            <p>Prueba los metodos basicos de expresiones regulares: test(), exec() y match().</p>
+
+            <div class="campo">
+                <label for="texto-prueba">Texto a comprobar (str):</label>
+                <input type="text" id="texto-prueba" value="The quick brown fox jumps over the lazy dog. Contacto: 569-542-523">
+            </div>
+
+            <div class="campo">
+                <label for="patron-prueba">Expresion regular (pattern):</label>
+                <input type="text" id="patron-prueba" value="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+            </div>
+
+            <div class="botones">
+                <button type="button" id="btn-test">Probar pattern.test(str)</button>
+                <button type="button" id="btn-exec">Probar pattern.exec(str)</button>
+                <button type="button" id="btn-match">Probar str.match(pattern)</button>
+            </div>
+
+            <div id="resultado-metodos" class="caja-resultado">
+                Aqui se mostrara el resultado del metodo que pulses.
+            </div>
+        </section>
+
+        <!-- SECCION 3: ENLACES Y RECURSOS -->
+        <section class="bloque">
+            <h2>3. Recursos para repasar</h2>
+            <ul>
+                <li><a href="https://regexlearn.com/learn/regex101" target="_blank">RegexLearn (Retos interactivos)</a></li>
+                <li><a href="https://www.w3schools.com/jsref/jsref_obj_regexp.asp" target="_blank">W3Schools - Simbolos de RegEx</a></li>
+                <li><a href="https://4geeks.com/es/lesson/regex-tutorial-regular-expression-ejemplo" target="_blank">Tutorial en 4Geeks</a></li>
+                <li><a href="https://www.youtube.com/watch?v=-Z8UfqJRwNE" target="_blank">Video: RegEx en 5 minutos</a></li>
+                <li><a href="https://www.youtube.com/watch?v=MRKpVxn5fqI" target="_blank">Video: RegEx en una hora por MoureDev</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Curso Ironhack - Semana 20 Dia 1</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
