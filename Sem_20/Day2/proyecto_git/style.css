@@ -1,0 +1,82 @@
+/* Estilos basicos para principiantes (sin animaciones ni iconos) */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f9fa;
+    color: #222222;
+    margin: 0;
+    padding: 20px;
+}
+
+header, main, footer {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 2px solid #cccccc;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 22px;
+    color: #111111;
+    margin: 0 0 6px 0;
+}
+
+h2 {
+    font-size: 16px;
+    color: #333333;
+    margin-top: 0;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 4px;
+}
+
+p {
+    font-size: 14px;
+    color: #444444;
+    margin: 8px 0;
+}
+
+.seccion {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
+
+ol {
+    padding-left: 20px;
+    margin: 8px 0;
+}
+
+li {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #333333;
+}
+
+a {
+    display: inline-block;
+    color: #0066cc;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+a:hover {
+    color: #004488;
+}
+
+footer {
+    border-top: 1px solid #dddddd;
+    padding-top: 12px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #777777;
+}

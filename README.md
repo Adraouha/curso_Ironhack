@@ -17,4 +17,6 @@ Repositorio con las tareas organizadas por semanas y dias a partir de la semana 
 - `Sem_19/day_3`: Resumen del Ciclo de Vida del Desarrollo de Software (SDLC) con ejemplos del proyecto del curso.
 - `Sem_19/day_4`: Documentacion de codigo JavaScript con JSDoc (`variables.js`, `funciones.js`, `jsdoc.json`, tutorial y documentacion HTML generada en `docs/`).
 - `Sem_20/Day1`: Documentacion con Javadoc (Niveles 1 y 2 con exportacion HTML) y expresiones regulares RegEx (HTML5 pattern/title, JavaScript test/exec/match, Java matches/Pattern y MySQL REGEXP).
+- `Sem_20/Day2`: Git y GitHub con Visual Studio Code (control de versiones, interfaz Source Control, staging, commits, ramas, merge y subida a GitHub).
+
 
