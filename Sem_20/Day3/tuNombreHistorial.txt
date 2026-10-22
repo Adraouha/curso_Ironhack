@@ -1,0 +1,40 @@
+    1  git --version
+    2  git config --global user.name "Albert"
+    3  git config --global user.email "albert@ironhack.com"
+    4  pwd
+    5  ls -la
+    6  git init
+    7  git status
+    8  git add index.html
+    9  git commit -m "Commit 1: anadido index.html"
+   10  git remote add origin https://github.com/AlbertIronhack/testgit-3.git
+   11  git branch -M main
+   12  git push -u origin main
+   13  git checkout -b rama2
+   14  git status
+   15  git add detalle.html
+   16  git commit -m "Commit 2 en rama2: anadido detalle.html"
+   17  git push -u origin rama2
+   18  git checkout main
+   19  git merge rama2
+   20  git push
+   21  git branch -d rama2
+   22  git push origin --delete rama2
+   23  git log --oneline
+   24  echo "Version 1.0" > notas.txt
+   25  git add notas.txt
+   26  git commit -m "Commit 1 en notas.txt"
+   27  git push
+   28  echo "Version 2.0" >> notas.txt
+   29  git add notas.txt
+   30  git commit -m "Commit 2 en notas.txt"
+   31  git push
+   32  echo "Version 3.0" >> notas.txt
+   33  git add notas.txt
+   34  git commit -m "Commit 3 en notas.txt"
+   35  git push
+   36  git log --oneline
+   37  git reset --hard HEAD~2
+   38  git push origin main --force
+   39  git log --oneline > tuNombreGitlog.txt
+   40  history 50 > tuNombreHistorial.txt
