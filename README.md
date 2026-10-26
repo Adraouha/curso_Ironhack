@@ -20,6 +20,7 @@ Repositorio con las tareas organizadas por semanas y dias a partir de la semana 
 - `Sem_20/Day2`: Git y GitHub con Visual Studio Code (control de versiones, interfaz Source Control, staging, commits, ramas, merge y subida a GitHub).
 - `Sem_20/Day3`: Git Bash y comandos de terminal (entorno Unix, modificadores flags, ramas por consola, git reset y exportacion de log e historial).
 - `Sem_20/Day4`: .gitignore y conflictos de merge en Git (VIM, Pager, amend, diff, Lab Biblioteca y Lab Tienda Online).
+- `Sem_20/Day5`: Redes, cPanel en hosting gratuito Tonohost y acceso FTP con FileZilla (resolucion DNS, puertos, htdocs y despliegue web).
 
 
 

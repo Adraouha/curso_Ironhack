@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Despliegue Web FTP - Semana 20 Ironhack</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background-glow"></div>
+
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <span class="logo-icon">🚀</span>
+        <span class="logo-text">Ironhack Web Deploy</span>
+      </div>
+      <nav class="badge">
+        <span class="status-dot"></span>
+        <span>Servidor Online &bull; FTP htdocs</span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="tag">Semana 20 &bull; Día 5 &bull; Laboratorio FTP</div>
+      <h1 class="title">¡Sitio web desplegado con éxito vía <span class="gradient-text">FileZilla &amp; Tonohost</span>!</h1>
+      <p class="subtitle">
+        Página web de prueba servida en producción desde el directorio raíz público <code>htdocs</code> 
+        utilizando arquitectura Cliente/Servidor, resolución DNS y el protocolo FTP.
+      </p>
+      
+      <div class="hero-actions">
+        <button id="btn-saludo" class="btn btn-primary">
+          <span>Probar Interactividad JS</span> ✨
+        </button>
+        <a href="#detalles-tecnicos" class="btn btn-secondary">
+          <span>Ver Ficha Técnica</span> 📋
+        </a>
+      </div>
+      <div id="mensaje-saludo" class="alert-box hidden"></div>
+    </section>
+
+    <section id="detalles-tecnicos" class="grid-cards">
+      <article class="card">
+        <div class="card-icon">🌐</div>
+        <h3>1. Resolución DNS y Red</h3>
+        <p>
+          El navegador resuelve el subdominio gratuito a una dirección <strong>IP pública</strong> mediante 
+          servidores de nombres (DNS). Luego establece una conexión HTTP/HTTPS por el puerto 80/443.
+        </p>
+        <div class="card-badge">DNS &rarr; IP Pública</div>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">⚙️</div>
+        <h3>2. Panel de Control (cPanel)</h3>
+        <p>
+          Configuración del hosting en <strong>Tonohost</strong>: administración de archivos, subdominios, 
+          creación de cuentas FTP asociadas y control de bases de datos MySQL.
+        </p>
+        <div class="card-badge">VistaPanel / cPanel</div>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">📁</div>
+        <h3>3. Transferencia FTP (FileZilla)</h3>
+        <p>
+          Conexión al puerto 21 mediante el cliente FileZilla para sincronizar los archivos 
+          (<code>index.html</code>, <code>estilos.css</code>, <code>script.js</code>) directamente en la carpeta <code>htdocs</code>.
+        </p>
+        <div class="card-badge">FTP / Modo Pasivo</div>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">⚡</div>
+        <h3>4. Servidor Web Apache</h3>
+        <p>
+          El servidor detecta automáticamente <code>index.html</code> como archivo de índice principal, 
+          permitiendo que cualquier visitante visualice la web en su navegador sin indicar la ruta completa.
+        </p>
+        <div class="card-badge">Directorio /htdocs</div>
+      </article>
+    </section>
+
+    <section class="info-panel">
+      <div class="info-header">
+        <h3>📊 Diagnóstico del Entorno en Vivo</h3>
+        <span id="live-clock" class="mono-badge">Cargando fecha y hora...</span>
+      </div>
+      <div class="info-content">
+        <div class="info-item">
+          <span class="label">Protocolo detectado:</span>
+          <span id="protocolo-info" class="value mono">--</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Host actual:</span>
+          <span id="host-info" class="value mono">--</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Navegador (User Agent):</span>
+          <span id="browser-info" class="value">--</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Ruta remota recomendada:</span>
+          <span class="value mono text-success">/htdocs/index.html</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Curso Ironhack &bull; Semana 20: Redes, cPanel, FTP y FileZilla.</p>
+      <p class="footer-note">Desplegado como ejercicio práctico de laboratorio en servidor Tonohost.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
