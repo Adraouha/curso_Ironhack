@@ -21,6 +21,11 @@ Repositorio con las tareas organizadas por semanas y dias a partir de la semana 
 - `Sem_20/Day3`: Git Bash y comandos de terminal (entorno Unix, modificadores flags, ramas por consola, git reset y exportacion de log e historial).
 - `Sem_20/Day4`: .gitignore y conflictos de merge en Git (VIM, Pager, amend, diff, Lab Biblioteca y Lab Tienda Online).
 - `Sem_20/Day5`: Redes, cPanel en hosting gratuito Tonohost y acceso FTP con FileZilla (resolucion DNS, puertos, htdocs y despliegue web).
+- `Sem_21/Day1`: Desplegar app online (Frontend en GitHub Pages, Backend en Render, Base de datos en Aiven, CORS y variables de entorno).
+- `Sem_21/Day2`: AWS Desplegar (Laboratorio con Docker y Amazon EC2, contenedores, grupos de seguridad e IP publica).
+- `Sem_21/Day3`: Testing JavaScript (console.assert, introduccion a Jest, CommonJS y pruebas con casos limite).
+- `Sem_21/Day4`: Jest Coverage (Analisis de cobertura con --coverage, matchers toBeGreaterThan, toBeFalsy, toEqual y utilidades numericas).
+
 
 
 

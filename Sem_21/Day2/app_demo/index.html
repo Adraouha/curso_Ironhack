@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despliegue en AWS EC2 con Docker</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f7f9fa;
+            color: #16191f;
+            padding: 30px 20px;
+            line-height: 1.6;
+        }
+        .tarjeta {
+            max-width: 750px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #d5dbdb;
+            border-radius: 4px;
+            padding: 25px;
+        }
+        header {
+            border-bottom: 2px solid #232f3e;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 22px;
+            color: #232f3e;
+        }
+        p {
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+        .cuadro-info {
+            background-color: #eaeded;
+            border-left: 4px solid #ff9900;
+            padding: 12px 15px;
+            margin: 15px 0;
+            font-family: monospace;
+            font-size: 13px;
+        }
+        .lista-checklist {
+            list-style-type: decimal;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        .lista-checklist li {
+            margin-bottom: 8px;
+        }
+        footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #68707f;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="tarjeta">
+        <header>
+            <h1>Aplicacion Desplegada en Amazon EC2</h1>
+            <p>Laboratorio de despliegue con Docker y maquina virtual Ubuntu en AWS</p>
+        </header>
+
+        <main>
+            <p>Si estas viendo esta pagina desde el navegador a traves de una direccion IP publica, significa que la conexion con el contenedor Docker en AWS EC2 ha sido exitosa.</p>
+
+            <div class="cuadro-info" id="info-servidor">
+                Estado: Conectando con /api/info...
+            </div>
+
+            <h2>Comprobaciones cumplidas para este acceso</h2>
+            <ol class="lista-checklist">
+                <li>Instancia EC2 encendida y activa en la region de AWS.</li>
+                <li>Contenedor Docker ejecutandose en segundo plano.</li>
+                <li>Puerto 3000 mapeado hacia el exterior mediante el modificador -p 3000:3000.</li>
+                <li>Servidor Node.js escuchando en la interfaz 0.0.0.0.</li>
+                <li>Security Group con regla de entrada permitiendo trafico TCP en el puerto 3000.</li>
+                <li>Acceso correcto mediante la IP publica de la maquina virtual.</li>
+            </ol>
+        </main>
+
+        <footer>
+            Semana 21 - Laboratorio de Despliegue en AWS EC2
+        </footer>
+    </div>
+
+    <script>
+        // Obtener datos del endpoint del servidor
+        fetch("/api/info")
+            .then(res => res.json())
+            .then(data => {
+                const infoDiv = document.getElementById("info-servidor");
+                infoDiv.innerHTML = 
+                    "Servidor: " + data.mensaje + "<br>" +
+                    "Host interno contenedor: " + data.hostname + "<br>" +
+                    "Interfaz de escucha: " + data.host + ":" + data.puerto + "<br>" +
+                    "Memoria libre: " + data.memoriaLibreMB + " MB / " + data.memoriaTotalMB + " MB";
+            })
+            .catch(err => {
+                const infoDiv = document.getElementById("info-servidor");
+                infoDiv.textContent = "No se pudo obtener el estado desde /api/info";
+            });
+    </script>
+</body>
+</html>

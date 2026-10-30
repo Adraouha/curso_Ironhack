@@ -4,3 +4,7 @@
 .DS_Store
 Sem_18/day_3/config.js
 **/.env
+node_modules/
+**/node_modules/
+coverage/
+**/coverage/

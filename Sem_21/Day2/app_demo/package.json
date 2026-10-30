@@ -1,0 +1,12 @@
+{
+  "name": "app-aws-ec2-demo",
+  "version": "1.0.0",
+  "description": "Aplicacion de ejemplo para despliegue en AWS EC2 con Docker",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "dia4-jest-coverage",
+  "version": "1.0.0",
+  "description": "Utilidades numericas con Jest y analisis de cobertura de codigo",
+  "main": "js/utilidades.js",
+  "scripts": {
+    "test": "jest --coverage --verbose"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Tareas - Despliegue Online</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Panel de Tareas del Proyecto</h1>
+        <p>Aplicacion web conectada a backend desplegado en la nube</p>
+    </header>
+
+    <main class="contenedor">
+        <section class="tarjeta-formulario">
+            <h2>Crear nueva tarea</h2>
+            <form id="formulario-tarea">
+                <div class="campo">
+                    <label for="titulo">Titulo de la tarea:</label>
+                    <input type="text" id="titulo" name="titulo" required placeholder="Ejemplo: Preparar documentacion">
+                </div>
+
+                <div class="campo">
+                    <label for="responsable">Responsable:</label>
+                    <input type="text" id="responsable" name="responsable" required placeholder="Ejemplo: Ana Garcia">
+                </div>
+
+                <div class="campo">
+                    <label for="prioridad">Prioridad:</label>
+                    <select id="prioridad" name="prioridad">
+                        <option value="Baja">Baja</option>
+                        <option value="Media" selected>Media</option>
+                        <option value="Alta">Alta</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="btn-guardar">Guardar tarea</button>
+            </form>
+        </section>
+
+        <section class="tarjeta-listado">
+            <div class="cabecera-listado">
+                <h2>Listado de tareas</h2>
+                <button type="button" id="btn-recargar">Recargar datos</button>
+            </div>
+
+            <div id="mensaje-estado" class="mensaje-estado">Cargando tareas...</div>
+
+            <ul id="lista-tareas" class="lista-tareas"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Semana 21 - Despliegue en tres capas: GitHub Pages, Render y Aiven</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "dia3-testing-javascript",
+  "version": "1.0.0",
+  "description": "Introduccion a pruebas de software con Jest y CommonJS",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
